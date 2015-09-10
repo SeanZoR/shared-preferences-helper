@@ -1,0 +1,24 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 22
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
+
+dependencies {
+    // Needed for annotations support
+    compile 'com.android.support:appcompat-v7:22.2.1'
+}
+
+// Push to maven
+apply from: 'https://raw.github.com/seanzor/gradle-mvn-push/master/gradle-mvn-push.gradle'

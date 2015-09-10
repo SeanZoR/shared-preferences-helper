@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Shared Preferences Helper</string>
+
+    <string name="runners_counter_label">Number of times the app ran:</string>
+</resources>
