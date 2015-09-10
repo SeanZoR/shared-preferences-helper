@@ -1,4 +1,4 @@
-Android Detect WebGL
+Android Shared Preferences Helper
 ===============
 
 [![Build Status](https://travis-ci.org/SeanZoR/shared-preferences-helper.svg)](https://travis-ci.org/SeanZoR/shared-preferences-helper)
