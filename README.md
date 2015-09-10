@@ -13,9 +13,34 @@ dependencies {
 ```
 
 ## Usage
-As easy as:
+Define the preferences keys in a resource file:
+
+```xml
+<resources>
+    <string name="pref_number_of_runs">pref_number_of_runs</string>
+</resources>
+```
+
+And use them:
+
 ```java
-// TODO: Sample
+// As in most cases, create a default shared preference
+final SharedPreferences defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+
+// Create the helper which will wrap the SharedPreferences we just created
+mPref = new SharedPrefHelper(getResources(), defaultSharedPreferences);
+
+// Sample for number of times the app ran, deafult of 0
+int numberOfTimesRan = mPref.getInt(R.string.pref_number_of_runs, 0);
+numberOfTimesRan++;
+
+// Now apply the change to be persistent
+mPref.applyInt(R.string.pref_number_of_runs, numberOfTimesRan);
+
+// Display the result
+((TextView)findViewById(R.id.activityMainResultField)).setText(
+        String.valueOf(numberOfTimesRan));
+
 ```
 
 
