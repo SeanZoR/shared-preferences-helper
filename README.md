@@ -2,6 +2,7 @@ Android Shared Preferences Helper
 ===============
 
 [![Build Status](https://travis-ci.org/SeanZoR/shared-preferences-helper.svg)](https://travis-ci.org/SeanZoR/shared-preferences-helper)
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-shared--preferences--helper-green.svg?style=flat)](https://android-arsenal.com/details/1/2471)
 
 Android Library to handle SharedPreferences boilerplate code and other tools
 
