@@ -8,7 +8,7 @@ Android Library to handle SharedPreferences boilerplate code and other tools
 ## Download
 ```groovy
 dependencies {
-  compile 'com.github.seanzor:shared-preferences-helper:1.0.0'
+  compile 'com.github.seanzor:shared-preferences-helper:1.0.1'
 }
 ```
 

@@ -12,9 +12,9 @@ public class SecuredSharedPrefHelper extends SharedPrefHelper {
 
     private final SecureStringHandler mSecureString;
 
-    interface SecureStringHandler{
-        public String encrypt(Context ctx, String stringToEncrypt);
-        public String decrypt(Context ctx, String stringToDecrypt);
+    public interface SecureStringHandler{
+        String encrypt(Context ctx, String stringToEncrypt);
+        String decrypt(Context ctx, String stringToDecrypt);
     }
 
     public SecuredSharedPrefHelper(Resources res, SharedPreferences preferences, SecureStringHandler secureString) {
